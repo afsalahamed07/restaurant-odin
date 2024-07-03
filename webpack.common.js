@@ -5,6 +5,15 @@ module.exports = {
   entry: {
     app: "./src/index.js",
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        include: path.resolve(__dirname, "src"),
+        use: ["style-loader", "css-loader", "postcss-loader"],
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Resturant Page",

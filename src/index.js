@@ -1,14 +1,16 @@
-import { createNav } from "./nav";
+import "./input.css";
+import { createNav } from "./nav/nav.js";
+import { home } from "./home/home.js";
 
-console.log("index.js");
+let body = document.querySelector("body");
 
-function createContent() {
-  let div = document.createElement("div");
-  div.innerHTML = "This is the content";
+body.classList.add("container", "mx:auto", "m-auto", "p-4");
 
-  return div;
-}
+let nav = createNav();
+body.appendChild(nav.getDomElement());
 
-document.body.appendChild(createContent());
-
-createNav();
+// the content of the page
+// changes based on the button clicked
+// default is home
+let content = document.createElement("div");
+content.id = "content";
