@@ -1,10 +1,10 @@
 import { createNavElement } from "../components/navElement";
 
-function createHome() {
+function createAbout() {
   let { getDomElement } = createContent();
 
   let fillCallback = () => {
-    console.log("You clicked on Home");
+    console.log("You clicked on about");
     document
       .getElementById("content")
       .replaceChild(
@@ -13,15 +13,14 @@ function createHome() {
       );
   };
 
-  let button = createNavElement("Home", fillCallback);
-
+  let button = createNavElement("About", fillCallback);
   return { getDomElement, button };
 }
 
 function createContent() {
-  const home = document.createElement("div");
-  home.id = "home";
-  home.classList.add("p-4", "m-auto");
+  const about = document.createElement("div");
+  about.id = "about";
+  about.classList.add("p-4", "m-auto");
 
   const title = document.createElement("h1");
   title.classList.add(
@@ -31,18 +30,18 @@ function createContent() {
     "tracking-wide",
     "text-rose-400",
   );
-  title.textContent = "Welcome, Fellow Foodie!";
+  title.textContent = "Bit About Odin";
 
   const description = document.createElement("p");
   description.classList.add("text-2xl", "p-2", "text-gray-600");
-  description.textContent = "We serve the food, pleases the Odin";
+  description.textContent = "This is about Page";
 
-  home.appendChild(title);
-  home.appendChild(description);
+  about.appendChild(title);
+  about.appendChild(description);
 
-  let getDomElement = () => home;
+  let getDomElement = () => about;
 
   return { getDomElement };
 }
 
-export { createHome };
+export { createAbout };

@@ -1,7 +1,7 @@
-function createNavElement(text) {
+function createNavElement(text, callback) {
   let div = document.createElement("div");
 
-  let button = document.createElement("button");
+  const button = document.createElement("button");
   button.textContent = text;
 
   button.classList.add(
@@ -18,6 +18,11 @@ function createNavElement(text) {
   div.appendChild(button);
 
   const getDomElement = () => div;
+
+  div.addEventListener("click", () => {
+    console.log(`You clicked on ${text}`);
+    callback();
+  });
 
   return { div, getDomElement };
 }

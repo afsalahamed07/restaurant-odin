@@ -4,7 +4,16 @@ import { createHome } from "./home/home.js";
 
 let body = document.querySelector("body");
 
-body.classList.add("container", "mx:auto", "m-auto", "p-4", "flex", "flex-col", "h-screen", "font-mono");
+body.classList.add(
+  "container",
+  "mx:auto",
+  "m-auto",
+  "p-4",
+  "flex",
+  "flex-col",
+  "h-screen",
+  "font-mono",
+);
 
 let nav = createNav();
 body.appendChild(nav.getDomElement());
@@ -19,4 +28,8 @@ body.appendChild(content);
 
 const home = createHome();
 
-content.appendChild(home.getDomElement());
+function fillContent(component) {
+  content.appendChild(home.getDomElement());
+}
+
+fillContent(home);

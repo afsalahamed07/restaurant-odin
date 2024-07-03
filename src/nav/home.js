@@ -1,7 +1,7 @@
 import { createNavElement } from "../components/navElement.js";
 
-function createHomeButton() {
-  let button = createNavElement("Home");
+function createHomeButton(fillCallBack) {
+  let button = createNavElement("Home", fillCallBack);
 
   return Object.assign({},  button );
 }
