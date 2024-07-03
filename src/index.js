@@ -1,10 +1,10 @@
 import "./input.css";
 import { createNav } from "./nav/nav.js";
-import { home } from "./home/home.js";
+import { createHome } from "./home/home.js";
 
 let body = document.querySelector("body");
 
-body.classList.add("container", "mx:auto", "m-auto", "p-4");
+body.classList.add("container", "mx:auto", "m-auto", "p-4", "flex", "flex-col", "h-screen", "font-mono");
 
 let nav = createNav();
 body.appendChild(nav.getDomElement());
@@ -14,3 +14,9 @@ body.appendChild(nav.getDomElement());
 // default is home
 let content = document.createElement("div");
 content.id = "content";
+content.classList.add("p-4", "flex", "flex-col", "grow");
+body.appendChild(content);
+
+const home = createHome();
+
+content.appendChild(home.getDomElement());
