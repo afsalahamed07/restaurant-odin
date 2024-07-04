@@ -1,9 +1,16 @@
-function createNavElement(text, callback) {
-  let div = document.createElement("div");
-
+function createNavElement(text, content, contentParent) {
+  const div = document.createElement("div");
   const button = document.createElement("button");
-  button.textContent = text;
+  div.appendChild(button);
 
+  const getDomElement = () => div;
+
+  div.addEventListener("click", () => {
+    console.log(`You clicked on ${text}`);
+    contentParent.replaceChild(content.getDomElement(), contentParent.firstChild);
+  });
+
+  button.textContent = text;
   button.classList.add(
     "nav-element",
     "bg-red-100",
@@ -15,16 +22,7 @@ function createNavElement(text, callback) {
     "rounded",
   );
 
-  div.appendChild(button);
-
-  const getDomElement = () => div;
-
-  div.addEventListener("click", () => {
-    console.log(`You clicked on ${text}`);
-    callback();
-  });
-
-  return { div, getDomElement };
+  return { getDomElement };
 }
 
 export { createNavElement };

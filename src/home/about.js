@@ -1,23 +1,4 @@
-import { createNavElement } from "../components/navElement";
-
 function createAbout() {
-  let { getDomElement } = createContent();
-
-  let fillCallback = () => {
-    console.log("You clicked on about");
-    document
-      .getElementById("content")
-      .replaceChild(
-        getDomElement(),
-        document.getElementById("content").firstChild,
-      );
-  };
-
-  let button = createNavElement("About", fillCallback);
-  return { getDomElement, button };
-}
-
-function createContent() {
   const about = document.createElement("div");
   about.id = "about";
   about.classList.add("p-4", "m-auto");
