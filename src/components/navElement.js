@@ -6,8 +6,10 @@ function createNavElement(text, content, contentParent) {
   const getDomElement = () => div;
 
   div.addEventListener("click", () => {
-    console.log(`You clicked on ${text}`);
-    contentParent.replaceChild(content.getDomElement(), contentParent.firstChild);
+    contentParent.replaceChild(
+      content.getDomElement(),
+      contentParent.firstChild,
+    );
   });
 
   button.textContent = text;
@@ -20,6 +22,7 @@ function createNavElement(text, content, contentParent) {
     "py-2",
     "px-4",
     "rounded",
+    "tracking-wider",
   );
 
   return { getDomElement };

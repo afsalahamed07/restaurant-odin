@@ -1,0 +1,46 @@
+{
+  "menu": [
+    {
+      "title": "Burger",
+      "description": "A delicious burger",
+      "price": 5.99,
+      "currency": "USD",
+      "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg"
+    },
+    {
+      "title": "Pizza",
+      "description": "A delicious pizza",
+      "price": 7.99,
+      "currency": "USD",
+      "image": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg"
+    },
+    {
+      "title": "Pasta",
+      "description": "A delicious pasta",
+      "price": 6.99,
+      "currency": "USD",
+      "image": "https://cdn.pixabay.com/photo/2017/11/22/20/17/spaghetti-2960374_960_720.jpg"
+    },
+    {
+      "title": "Salad",
+      "description": "A delicious salad",
+      "price": 4.99,
+      "currency": "USD",
+      "image": "https://cdn.pixabay.com/photo/2017/05/07/08/56/fruit-2291905_960_720.jpg"
+    },
+    {
+      "title": "Sushi",
+      "description": "A delicious sushi",
+      "price": 9.99,
+      "currency": "USD",
+      "image": "https://cdn.pixabay.com/photo/2017/08/08/12/52/sushi-2614256_960_720.jpg"
+    },
+    {
+      "title": "Taco",
+      "description": "A delicious taco",
+      "price": 3.99,
+      "currency": "USD",
+      "image": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg"
+    }
+  ]
+}

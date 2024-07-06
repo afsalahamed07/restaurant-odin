@@ -1,7 +1,8 @@
 import "./input.css";
 import { createNav } from "./nav/nav.js";
-import { createHome } from "./home/home.js";
-import { createAbout } from "./home/about.js";
+import { createHome } from "./components/home.js";
+import { createAbout } from "./components/about.js";
+import { createMenu } from "./components/menu.js";
 
 import { createNavElement } from "./components/navElement.js";
 
@@ -22,14 +23,7 @@ let contentParent = document.createElement("div");
 
 let home = createHome();
 let about = createAbout();
-let menu = {
-  getDomElement: () => {
-    const menu = document.createElement("div");
-    menu.id = "menu";
-    menu.textContent = "This is menu Page";
-    return menu;
-  },
-};
+let menu = createMenu();
 
 let homeButton = createNavElement("Home", home, contentParent);
 let menuButton = createNavElement("Menu", menu, contentParent);
