@@ -3,9 +3,6 @@ function createPagination(length, itemsPerPage, callback) {
   let currentPage = 1;
 
   function updatePagination() {
-    console.log(length);
-    console.log(Math.ceil(length / itemsPerPage));
-
     previous.disabled = currentPage === 1;
     next.disabled = currentPage === Math.ceil(length / itemsPerPage);
   }

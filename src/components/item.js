@@ -32,16 +32,16 @@ function createMenuItem(titleText, descriptionText, priceText, imageSrc) {
     "rounded-md",
     "gap-4",
   );
-  textDiv.classList.add("flex", "flex-col", "gap-2", "p-2");
-  image.classList.add("w-40", "h-40", "rounded-md", "mx-4");
+  textDiv.classList.add("flex", "flex-col", "gap-3", "px-4")
+  imageDiv.classList.add("basis-40", "flex-none");
+  image.classList.add("h-40", "rounded-md", "overflow-hidden", "m-auto");
   title.classList.add(
     "text-2xl",
     "font-bold",
     "text-rose-400",
-    "tracking-wider",
-    "py-2",
+    "tracking-wide",
   );
-  textDiv.classList.add("text-lg", "text-gray-600", "tracking-wide");
+  description.classList.add("grow", "text-pretty", "text-lg");
 
   return { getDomElement };
 }

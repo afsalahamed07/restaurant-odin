@@ -10,9 +10,8 @@ function createMenu() {
   const menuItems = document.createElement("div");
   menuItems.classList.add(
     "flex",
-    "flex-wrap",
     "flex-col",
-    "gap-4",
+    "gap-5",
     "justify-center",
     "grow",
   );
@@ -26,7 +25,7 @@ function createMenu() {
 
   function calculateItemsPerPage() {
     const itemHeight = 250;
-    const availableHeight = window.innerHeight - 50;
+    const availableHeight = window.innerHeight - 100;
     return Math.floor(availableHeight / itemHeight);
   }
 
@@ -37,11 +36,13 @@ function createMenu() {
     const items = data.menu.slice(start, end);
 
     for (const item of items) {
+      const imageReq = require(`../../assets/images/${item.image}`);
+
       const menuItem = createMenuItem(
         item.title,
         item.description,
         "$" + item.price,
-        item.image,
+        imageReq,
       );
       menuItems.appendChild(menuItem.getDomElement());
     }

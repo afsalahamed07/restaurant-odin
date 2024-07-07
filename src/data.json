@@ -1,46 +1,46 @@
 {
   "menu": [
     {
-      "title": "Burger",
-      "description": "A delicious burger",
+      "title": "Hamburger",
+      "description": "A delicious burger. Comes with fries. We recommend adding cheese. Nutritional information: 350 calories.",
       "price": 5.99,
       "currency": "USD",
-      "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg"
+      "image": "hamburger.webp"
     },
     {
       "title": "Pizza",
-      "description": "A delicious pizza",
+      "description": "A delicious pizza. We recommend adding pepperoni. Nutritional information: 800 calories.",
       "price": 7.99,
       "currency": "USD",
-      "image": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg"
+      "image": "pizza.webp"
     },
     {
       "title": "Pasta",
-      "description": "A delicious pasta",
+      "description": "A delicious pasta. We recommend adding cheese. Nutritional information: 600 calories.",
       "price": 6.99,
       "currency": "USD",
-      "image": "https://cdn.pixabay.com/photo/2017/11/22/20/17/spaghetti-2960374_960_720.jpg"
+      "image": "pasta.webp"
     },
     {
       "title": "Salad",
-      "description": "A delicious salad",
+      "description": "A delicious salad. We recommend adding croutons. Nutritional information: 150 calories.",
       "price": 4.99,
       "currency": "USD",
-      "image": "https://cdn.pixabay.com/photo/2017/05/07/08/56/fruit-2291905_960_720.jpg"
+      "image": "salad.webp"
     },
     {
       "title": "Sushi",
-      "description": "A delicious sushi",
+      "description": "A delicious sushi. We recommend adding soy sauce. Nutritional information: 200 calories.",
       "price": 9.99,
       "currency": "USD",
-      "image": "https://cdn.pixabay.com/photo/2017/08/08/12/52/sushi-2614256_960_720.jpg"
+      "image": "sushi.webp"
     },
     {
       "title": "Taco",
-      "description": "A delicious taco",
+      "description": "A delicious taco. We recommend adding guacamole. Nutritional information: 400 calories.",
       "price": 3.99,
       "currency": "USD",
-      "image": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg"
+      "image": "taco.webp"
     }
   ]
 }
