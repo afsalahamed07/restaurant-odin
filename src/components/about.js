@@ -17,7 +17,7 @@ function createAbout() {
   const description = document.createElement("p");
   description.classList.add("text-xl", "p-2", "text-pretty", "tracking-wide");
   description.textContent =
-    "The Odin Restourant is a place where you can enjoy the best food in the world. We have the best chefs in the world who can cook any dish you want. We have a wide range of dishes from all over the world. We have the best service in the world. We have the best atmosphere in the world. We have the best customers in the world. We have the best everything in the world. We are the best in the world. We are the Odin Restourant";
+    "The Odin Restourant is a place where you can enjoy the best food in the world. We have the best chefs in the world who can cook any dish you want. We have a wide range of dishes from all over the world. We have the best service in the world. We have the best atmosphere in the world. We have the best customers in the world. We have the best everything in the world. We are the best in the world. We are the Odin Restourant.";
 
   about.appendChild(title);
   about.appendChild(description);

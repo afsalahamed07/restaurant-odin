@@ -5,7 +5,7 @@ import { createMenuItem } from "./item";
 function createMenu() {
   const menu = document.createElement("div");
   menu.id = "menu";
-  menu.classList.add("p-4", "flex", "flex-col", "grow");
+  menu.classList.add("flex", "flex-col", "grow");
 
   const menuItems = document.createElement("div");
   menuItems.classList.add(
