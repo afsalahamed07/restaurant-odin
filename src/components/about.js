@@ -13,7 +13,6 @@ function createAbout() {
   );
   title.textContent = "About Odin Restourant";
 
-  const descriptionContainer = document.createElement("div");
   const description = document.createElement("p");
   description.classList.add("text-xl", "p-2", "text-pretty", "tracking-wide");
   description.textContent =
