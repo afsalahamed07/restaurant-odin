@@ -20,13 +20,13 @@ function createPagination(length, itemsPerPage, callback) {
   const page = document.createElement("p");
 
   const pagButtonClasses = [
-    "hover:bg-red-400",
+    "bg-red-100",
+    "hover:bg-red-600",
     "hover:text-white",
     "font-black",
     "py-2",
     "px-4",
     "rounded-md",
-    "text-rose-400",
     "cursor-pointer",
   ];
 
