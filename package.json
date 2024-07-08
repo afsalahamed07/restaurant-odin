@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "pages": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "Afsal Rasheed",
   "devDependencies": {
